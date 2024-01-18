@@ -1,0 +1,29 @@
+{
+	"name": "Python 3",
+	"build": {
+		"dockerfile": "dockerfile",
+		"context": "..",
+		"args": { 
+			"VARIANT": "3.10"
+		}
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python"
+			},
+			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"MS-vsliveshare.vsliveshare"
+			]
+		}
+	}
+}
+
